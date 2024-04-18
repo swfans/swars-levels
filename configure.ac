@@ -30,8 +30,11 @@ ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 # Checks for programs
 PKG_PROG_PKG_CONFIG
 
+# Default install dir
+#AC_PREFIX_DEFAULT(/usr/local)
+
 # Flags
-AC_SUBST([PARENT_PACKAGE], [PARENT_PACKAGE])
+AC_SUBST([PARENT_PACKAGE], [parent_package])
 
 # Prepare makefiles from `.in` templates
 AC_CONFIG_FILES([Makefile])
